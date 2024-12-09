@@ -1,0 +1,33 @@
+<!-- Text Interpolation -->
+<h1>{{ message }}</h1>
+
+<!-- Text Interpolation -->
+<h3>{{ description }}</h3>
+
+<!-- Property Binding -->
+<img [src]="imgUrl" [width]="w" [height]="h" [alt]="altText" />
+
+<!-- Style Binding -->
+<p [style.color]="textColor">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quidem
+  dolores magnam omnis dicta, neque earum praesentium esse, voluptatum enim
+  reiciendis aliquid adipisci incidunt?
+</p>
+
+<!-- Class Binding -->
+<p [class.highlighted]="isHighlighted">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit odit ipsam
+  laborum velit quasi sed, aperiam sunt at repellat ratione minus porro nisi
+  corporis esse.
+</p>
+
+<!-- TWO-WAY DATA BINDING -->
+<!-- ngModel Binding -->
+<input [(ngModel)]="yourName" placeholder="Enter Your Name: " />
+
+<p>Hello {{ yourName }}!</p>
+
+<!-- Event Binding -->
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<p>Count: {{ count }}</p>

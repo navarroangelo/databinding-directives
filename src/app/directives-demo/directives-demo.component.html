@@ -1,0 +1,17 @@
+<!-- <p>directives-demo works!</p> -->
+
+<!-- ngIf -->
+<div *ngIf="isLoggedIn">Welcome, User!</div>
+<div *ngIf="!isLoggedIn">Please Log In!</div>
+
+<div *ngIf="condition">Rendered Content if TRUE...</div>
+
+<!-- Expanded Syntax -->
+<ng-template [ngIf]="condition">
+  <div>Rendered Content if TRUE...</div>
+</ng-template>
+
+<!-- ngFor
+<ul>
+  <li ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul> -->
